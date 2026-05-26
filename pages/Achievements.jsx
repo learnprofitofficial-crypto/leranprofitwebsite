@@ -26,10 +26,10 @@ export default function Achievements() {
   ];
 
   const partners = [
-    { name: "Aryam Goyal", initials: "AG" },
-    { name: "Maheen Syeda", initials: "MS" },
-    { name: "Udantika Dhar", initials: "UD" },
-    { name: "Aayushman Dhar Dixit M", initials: "AD" },
+    { name: "Person-1", initials: "P1" },
+    { name: "Person-2", initials: "P2" },
+    { name: "Person-3", initials: "P3" },
+    { name: "Person-4", initials: "P4" },
   ];
 
   return (

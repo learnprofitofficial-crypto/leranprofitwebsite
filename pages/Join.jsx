@@ -14,7 +14,7 @@ export default function Join() {
     setError("");
 
     try {
-      const res = await fetch("/functions/submitApplication", {
+      const res = await fetch("/api/submitApplication", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -193,7 +193,7 @@ export default function Join() {
           <div>
             <div className="font-headline font-bold text-xl mb-4" style={{ color: "#e2e8f0" }}>LearnProfit</div>
             <p style={{ color: "#64748b" }}>Finance Education & Investment Club.</p>
-            <p style={{ color: "#475569", marginTop: "8px", fontSize: "12px" }}>Partners: Aryam Goyal · Maheen Syeda · Udantika Dhar · Aayushman Dhar Dixit M</p>
+            <p style={{ color: "#475569", marginTop: "8px", fontSize: "12px" }}>Built by the LearnProfit team.</p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {["Home", "Program", "Activities", "Achievements"].map((item, i) => (

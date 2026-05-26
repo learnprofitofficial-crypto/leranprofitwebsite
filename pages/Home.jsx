@@ -226,7 +226,7 @@ export default function Home() {
               The Finance Education & Investment Club — building the next generation of investors and analysts.
             </p>
             <p className="font-body text-xs mt-4" style={{ color: "#475569" }}>
-              Partners: Aryam Goyal · Maheen Syeda · Udantika Dhar · Aayushman Dhar Dixit M
+              Built by the LearnProfit team.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
