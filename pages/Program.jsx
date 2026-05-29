@@ -114,7 +114,7 @@ const tracks = [
         cover: [
           "Managing a live virtual portfolio of Rs 1,00,000",
           "Weekly portfolio reviews and adjustments",
-          "Presenting your investment thesis to the club",
+          "Presenting your investment thesis to the community",
           "Learning from wins and losses in real time",
           "Final rank based on returns and strategy quality",
         ],
@@ -127,7 +127,7 @@ const tracks = [
 const steps = [
   { num: "01", title: "Apply", desc: "Fill in the short application form. Takes two minutes." },
   { num: "02", title: "Get placed", desc: "We look at your grade and place you in the right track." },
-  { num: "03", title: "Start learning", desc: "Join sessions, activities and discussions with the club." },
+  { num: "03", title: "Start learning", desc: "Join sessions, activities and discussions with the community." },
   { num: "04", title: "Grow your rank", desc: "As you learn and contribute, your rank goes up." },
 ];
 

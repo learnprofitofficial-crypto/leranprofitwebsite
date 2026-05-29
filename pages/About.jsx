@@ -177,7 +177,7 @@ export default function About() {
           Our Solution
         </span>
         <h2 className="mt-3 max-w-2xl font-head text-[clamp(28px,4vw,42px)] font-extrabold leading-tight tracking-tight text-ink">
-          A finance club that actually teaches you how to think about money.
+          A student-driven ecosystem that actually teaches you how to think about money.
         </h2>
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {solutions.map((s) => (
@@ -296,7 +296,7 @@ export default function About() {
                 make it work for them.
               </p>
               <p>
-                LearnProfit isn't just a club. It's proof that students don't need to wait for the
+                LearnProfit isn't just a project. It's proof that students don't need to wait for the
                 system to change. We are the change — and we're just getting started.
               </p>
             </div>

@@ -39,9 +39,9 @@ const updates = [
     icon: "military_tech",
     color: "amber",
     label: "Achievement",
-    date: "March 2026",
-    title: "Three members reached Level 3 this month.",
-    body: "Congratulations to the members who completed Level 2 and advanced to Understanding Companies. They are now learning to read financial statements and analyse real businesses.",
+    date: "Ongoing",
+    title: "Members are leveling up across the program.",
+    body: "As members complete levels and put in real work, they climb the rank system — from Beginner Analyst toward Lead Researcher. Progress here is earned, not handed out.",
   },
 ];
 
@@ -186,7 +186,7 @@ export default function Home() {
             <span className="text-gradient">your school never gave you.</span>
           </h1>
           <p className="mt-8 max-w-2xl font-body text-lg leading-relaxed text-ink-muted">
-            LearnProfit is a student run finance club that teaches you how money actually works. Not
+            LearnProfit is a student-driven finance ecosystem that teaches you how money actually works. Not
             theory from a textbook. Real knowledge. Real skills. From budgeting and debt to stocks and
             investing.
           </p>
@@ -217,7 +217,7 @@ export default function Home() {
             </div>
             <span className="flex items-center gap-2 font-body text-sm text-mint">
               <span className="h-2 w-2 rounded-full bg-mint" />
-              Club is active
+              Ecosystem is active
             </span>
           </div>
 
@@ -290,12 +290,12 @@ export default function Home() {
           <div>
             <Eyebrow>What we are</Eyebrow>
             <h2 className="mt-3 font-head text-[clamp(28px,4vw,42px)] font-extrabold leading-tight tracking-tight text-ink">
-              A finance club that actually teaches you how to think about money.
+              A student-driven ecosystem that actually teaches you how to think about money.
             </h2>
             <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-ink-muted">
               <p>
                 LearnProfit is not a class. It is not a course you watch on YouTube. It is an active
-                club where students learn together, compete, debate, research, and grow.
+                ecosystem where students learn together, compete, debate, research, and grow.
               </p>
               <p>
                 We start from the very basics, things like what is a bank account, what is debt, how

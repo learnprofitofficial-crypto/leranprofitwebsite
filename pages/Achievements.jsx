@@ -4,14 +4,14 @@ const ranks = [
     icon: "🌱",
     level: 1,
     color: "#64748b",
-    desc: "Your starting point. Learn the fundamentals, participate in club activities, and begin building your financial knowledge.",
+    desc: "Your starting point. Learn the fundamentals, participate in community activities, and begin building your financial knowledge.",
   },
   {
     rank: "Junior Analyst",
     icon: "📊",
     level: 2,
     color: "#44d8f1",
-    desc: "Demonstrated consistent participation. You've started presenting company analyses or contributing to club discussions.",
+    desc: "Demonstrated consistent participation. You've started presenting company analyses or contributing to community discussions.",
   },
   {
     rank: "Senior Analyst",
@@ -25,7 +25,7 @@ const ranks = [
     icon: "🏆",
     level: 4,
     color: "#f59e0b",
-    desc: "The pinnacle of LearnProfit achievement. You lead research, mentor others, and consistently drive the club forward.",
+    desc: "The pinnacle of LearnProfit achievement. You lead research, mentor others, and consistently drive the community forward.",
   },
 ];
 
@@ -54,10 +54,10 @@ const certificates = [
 ];
 
 const criteria = [
-  { icon: "mic", title: "Present Company Analyses", desc: "Deliver weekly company presentations to the club" },
+  { icon: "mic", title: "Present Company Analyses", desc: "Deliver weekly company presentations to the community" },
   { icon: "description", title: "Publish Research Reports", desc: "Contribute to the monthly investment report" },
   { icon: "emoji_events", title: "Win Competitive Events", desc: "Top the portfolio competition or stock pitch contest" },
-  { icon: "chat", title: "Consistent Contributions", desc: "Actively engage in discussions and club activities" },
+  { icon: "chat", title: "Consistent Contributions", desc: "Actively engage in discussions and community activities" },
 ];
 
 const partners = [

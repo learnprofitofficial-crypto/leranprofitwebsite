@@ -21,7 +21,7 @@ export default function Footer() {
             <span className="font-head text-lg font-extrabold text-ink">LearnProfit</span>
           </div>
           <p className="max-w-[320px] font-body text-sm leading-relaxed text-ink-faint">
-            Finance Education &amp; Investment Club.
+            Finance Education &amp; Investment Ecosystem.
           </p>
           <p className="mt-3 max-w-[320px] font-body text-xs leading-relaxed text-ink-dim">
             Founded by Maheen Syeda · Aryam Goyal · Udantika Dhar · Aayushman Dhar Dixit M

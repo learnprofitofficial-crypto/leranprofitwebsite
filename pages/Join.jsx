@@ -57,7 +57,7 @@ export default function Join() {
         </h1>
         <p className="mx-auto mt-5 max-w-xl font-body text-xl text-ink-muted">
           Take your first step toward financial mastery. Apply to join the Finance Education &amp;
-          Investment Club.
+          Investment Ecosystem.
         </p>
       </div>
 
