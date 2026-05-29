@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { submitWeb3Forms } from "../src/web3forms.js";
 
 const perks = [
   { icon: "school", text: "Access to all 4 program levels" },
@@ -27,19 +28,17 @@ export default function Join() {
     setError("");
 
     try {
-      const res = await fetch("/api/submitApplication", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+      await submitWeb3Forms({
+        subject: `New LearnProfit application: ${form.name}`,
+        from_name: "LearnProfit Website",
+        name: form.name,
+        email: form.email,
+        grade: form.grade,
+        why: form.why,
       });
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error || "Something went wrong. Please try again.");
-      } else {
-        setSubmitted(true);
-      }
-    } catch {
-      setError("Network error. Please try again.");
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }

@@ -20,13 +20,13 @@ Official website for **LearnProfit** - Finance Education & Investment Club.
 - React
 - Tailwind CSS
 - React Router
-- Vercel Serverless Functions
 
-## Backend
-- `api/submitApplication.js` handles Join application submissions.
-- `api/submitContact.js` handles Contact form messages.
-- Optional email delivery uses Resend when `RESEND_API_KEY` is configured; both endpoints
-  degrade gracefully (log only) when it is not.
+## Forms / email
+- Both the Join and Contact forms submit directly to **Web3Forms**
+  (`https://api.web3forms.com/submit`) from the frontend — no backend needed.
+- The access key lives in `src/web3forms.js`. It is public-safe by design (Web3Forms
+  applies spam protection server-side). Get a free key at https://web3forms.com by
+  entering the destination Gmail; messages are delivered straight to that inbox.
 
 ## Team
 Built by the LearnProfit team.

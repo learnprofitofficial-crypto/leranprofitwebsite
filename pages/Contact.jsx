@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { submitWeb3Forms } from "../src/web3forms.js";
 
 const EMAIL = "learn.profit.official@gmail.com";
 
@@ -23,20 +24,17 @@ export default function Contact() {
     setError("");
 
     try {
-      const res = await fetch("/api/submitContact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+      await submitWeb3Forms({
+        subject: form.subject || `New LearnProfit message from ${form.name}`,
+        from_name: "LearnProfit Website",
+        name: form.name,
+        email: form.email,
+        message_subject: form.subject,
+        message: form.message,
       });
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error || "Something went wrong. Please try again.");
-        setStatus("idle");
-      } else {
-        setStatus("sent");
-      }
-    } catch {
-      setError("Network error. Please try again.");
+      setStatus("sent");
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
       setStatus("idle");
     }
   };
