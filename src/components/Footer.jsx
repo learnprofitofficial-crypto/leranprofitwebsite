@@ -48,7 +48,7 @@ export default function Footer() {
             learn.profit.official@gmail.com
           </a>
           <p className="mt-3 font-body text-sm text-ink-faint md:text-right">
-            © 2025 LearnProfit. All rights reserved.
+            © 2026 LearnProfit. All rights reserved.
           </p>
         </div>
       </div>
