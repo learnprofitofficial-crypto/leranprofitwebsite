@@ -2,19 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: #0e1322;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: #0e1322;
+    color: #dee1f7;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .material-symbols-outlined {
+    font-family: "Material Symbols Outlined";
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    font-style: normal;
+    line-height: 1;
+    user-select: none;
+  }
 }
 
-html {
-  background: #0e1322;
-}
+@layer components {
+  /* Layout container */
+  .container-x {
+    @apply mx-auto w-full max-w-content px-6 md:px-8;
+  }
 
-body {
-  margin: 0;
-}
+  /* Frosted nav bar */
+  .glass-nav {
+    background: rgba(14, 19, 34, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
+  /* Emerald gradient surfaces + the primary CTA */
+  .gradient-mint {
+    background: linear-gradient(135deg, #4edea3 0%, #10b981 100%);
+  }
+
+  .btn-primary {
+    @apply gradient-mint font-head font-bold rounded-full text-[#003824] shadow-cta transition-transform;
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    @apply font-head font-bold rounded-full text-ink transition-colors;
+    border: 1px solid rgba(60, 74, 66, 0.3);
+  }
+  .btn-ghost:hover {
+    border-color: rgba(78, 222, 163, 0.5);
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(to right, #4edea3, #44d8f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Base card surface */
+  .card-surface {
+    @apply rounded-xl bg-card;
+    border: 1px solid rgba(60, 74, 66, 0.12);
+  }
+
+  /* Eyebrow label above headings */
+  .eyebrow {
+    @apply font-head font-extrabold uppercase tracking-widest text-sm text-mint;
+  }
 }
