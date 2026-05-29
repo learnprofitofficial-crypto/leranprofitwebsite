@@ -200,7 +200,7 @@ export default function Program() {
                     {t.desc}
                   </p>
                 </div>
-                <div className="self-start rounded-xl border border-hair bg-base/40 p-5">
+                <div className="self-start rounded-xl border border-hair bg-navy/40 p-5">
                   <p className="font-head text-xs font-bold uppercase tracking-widest text-ink-faint">
                     Who this is for
                   </p>

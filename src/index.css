@@ -60,11 +60,11 @@
   }
 
   .btn-ghost {
-    @apply font-head font-bold rounded-full text-ink transition-colors;
-    border: 1px solid rgba(60, 74, 66, 0.3);
+    @apply font-head font-bold rounded-full text-white transition-colors;
+    border: 1px solid rgba(222, 225, 247, 0.25);
   }
   .btn-ghost:hover {
-    border-color: rgba(78, 222, 163, 0.5);
+    border-color: rgba(78, 222, 163, 0.6);
   }
 
   /* Gradient text */

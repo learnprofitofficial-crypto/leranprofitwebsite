@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: "#0e1322",
+        navy: "#0e1322",
         abyss: "#090e1c",
         panel: "#161b2b",
         card: "#1a1f2f",
